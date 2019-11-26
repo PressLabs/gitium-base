@@ -1,10 +1,16 @@
 /wp-content/*
+
 !/wp-content/index.php
 !/wp-content/languages/
 !/wp-content/mu-plugins/
 !/wp-content/plugins/
-!/wp-content/themes/
 !/wp-content/root/
+!/wp-content/themes/
+
+/wp-content/plugins/si-contact-form/captcha/cache
+/wp-content/plugins/si-contact-form/captcha/cache/**
+/wp-content/plugins/special-recent-posts/cache
+/wp-content/plugins/special-recent-posts/cache/**
 
 ._*
 .ansible
@@ -16,11 +22,16 @@
 .htaccess
 .idea/
 .maintenance
+.netrwhist
 .Spotlight-V100
 .Trashes
 .travis.yml
 .user.ini
 .vagrant
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-v][a-z]
+[._]sw[a-p]
 *.back
 *.bak
 *.log
@@ -32,6 +43,7 @@
 *~
 *sitemap*.xml*
 /../wp-config.php
+/log/
 /web.config
 /wp-config.common.php
 ~*
@@ -39,10 +51,10 @@ access_log
 debug.txt
 ehthumbs.db
 error_log
-log/
 Movefile
 package.box
 playbook.retry
+Session.vim
 sitemap.xml
 sitemap.xml.gz
 wordfence-waf.php
